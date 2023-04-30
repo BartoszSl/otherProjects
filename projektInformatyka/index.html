@@ -15,7 +15,7 @@
 			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap"
 			rel="stylesheet"
 		/>
-		<link rel="stylesheet" href="/css/main.css" />
+		<link rel="stylesheet" href="css/main.css" />
 	</head>
 	<body>
 		<div class="firstLine">
@@ -33,7 +33,7 @@
 			<div class="nav__items">
 				<a href="#islands" class="nav__item">Film</a>
 				<a href="#przewodnik" class="nav__item">Przewodnik</a>
-				<a href="#reviews" class="nav__item">O nas</a>
+				<a href="#about-us" class="nav__item">O nas</a>
 				<a href="#contact" class="nav__item">Mapa</a>
 			</div>
 		</nav>
@@ -54,28 +54,32 @@
 		<main class="main">
 			<section id="przewodnik" class="section section-przewodnik">
 				<div class="wrapper">
-					<h3 class="section__title">
-						Przewodnik: <span class="section__title--bold">Kadzielnia</span>
-					</h3>
-					<div class="section__content">
-						<img src="./img/kadzielnia.png" alt="" class="section__img" />
-						<p class="section__text">
-							Rezerwat Przyrody Kadzielnia to miejsce, w którym każdy znajdzie
-							coś dla siebie. Na terenie tego obiektu znajduje się M.in
-							jaskinia, tyrolka, oraz amfiteatr. Rezerwat Przyrody Kadzielnia to
-							miejsce, w którym każdy znajdzie coś dla siebie. Na terenie tego
-							obiektu znajduje się M.in jaskinia, tyrolka, oraz amfiteatr.
-							Rezerwat Przyrody Kadzielnia to miejsce, w którym każdy znajdzie
-							coś dla siebie. Na terenie tego obiektu znajduje się M.in
-							jaskinia, tyrolka, oraz amfiteatr.
-						</p>
+					<div class="section__content-text">
 						<select name="" id="" class="section__select">
 							<option value="Kadzielnia">Kadzielnia</option>
 						</select>
+						<h3 class="section__title">
+							Przewodnik: <span class="section__title--bold">Kadzielnia</span>
+						</h3>
+						<div class="section__content">
+							<p class="section__text">
+								Rezerwat Przyrody Kadzielnia to miejsce, w którym każdy znajdzie
+								coś dla siebie. Na terenie tego obiektu znajduje się M.in
+								jaskinia, tyrolka, oraz amfiteatr. Rezerwat Przyrody Kadzielnia
+								to miejsce, w którym każdy znajdzie coś dla siebie. Na terenie
+								tego obiektu znajduje się M.in jaskinia, tyrolka, oraz
+								amfiteatr. Rezerwat Przyrody Kadzielnia to miejsce, w którym
+								każdy znajdzie coś dla siebie. Na terenie tego obiektu znajduje
+								się M.in jaskinia, tyrolka, oraz amfiteatr.
+							</p>
+						</div>
+					</div>
+					<div class="section__content-imgs">
+						<img src="./img/kadzielnia.png" alt="" class="section__img" />
 						<iframe
 							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2518.3674738637515!2d20.615495927020383!3d50.86139635768952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471827f509bc6533%3A0xadd9e13322b35162!2sRezerwat%20Przyrody%20Kadzielnia!5e0!3m2!1spl!2spl!4v1682795255320!5m2!1spl!2spl"
-							width="350"
-							height="250"
+							width="0"
+							height="0"
 							style="border: 0"
 							allowfullscreen=""
 							loading="lazy"
@@ -84,6 +88,39 @@
 						></iframe>
 					</div>
 				</div>
+			</section>
+			<section id="about-us" class="section section-about-us">
+				<div class="header--shadow"></div>
+				<div class="wrapper">
+					<div class="about-us__main">
+						<h2 class="about-us__title content-color">Bartek</h2>
+						<div class="about-us__main--bottom">
+							<ul class="about-us__listToDo">
+								<li>Website</li>
+								<li>Host</li>
+								<li>Figma Project</li>
+							</ul>
+							<div class="about-us__icons">
+								<img src="./img/html.png" alt="">
+								<img src="./img/JavaScrpit.jpg" alt="">
+								<img src="./img/sass.svg" alt="">
+								<img src="./img/Figma.svg" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="about-us__content">
+						Strona została dopieszczona jak najbardziej się dało, w ładne
+						przejrzyste linki, guziki oraz inne skrypty utworzone dzięki
+						JavaScript oraz SCSS. Aktualnie pisząc ten tekst strona nie jest
+						responsywna, ale spróbuję ją taką uczynić, bo w końcu jaki ze mnie
+						Front-End’owiec jak strona nie responsywna. Każdą wersje strony jak i
+						moje dalsze projekty możecie śledzić na moim
+						<a href="" class="content-color">github</a>, a porady, ciekawostki i
+						ładne design, które może Ci się spodobają znajdują się na instagramie
+						<a href="" class="content-color">codeDungeon</a>.
+					</div>
+				</div>
+				<p class="about-us__logo">@codeDungeon</p>
 			</section>
 		</main>
 
