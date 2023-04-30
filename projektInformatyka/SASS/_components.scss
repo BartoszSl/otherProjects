@@ -8,6 +8,14 @@
 	color: $content-color;
 }
 
+.dark-content-color {
+	color: $dark-content
+}
+
+.light-gray-content {
+	color: $light-grey;
+}
+
 .btn-special-animation {
 	position: relative;
 	transition: background-color 0.3;
@@ -34,7 +42,7 @@
 	}
 }
 
-.section-przewodnik {
+.section-guide {
 	margin-top: 40px;
 	margin-bottom: 60px;
 }
@@ -47,6 +55,12 @@
 		background-size: cover;
 		z-index: 0;
 		height: 500px;
+		&--white {
+			background-image: none;
+			.about-us__listToDo, .about-us__content {
+				color: black;
+			}
+		}
 	}
 	&--shadow {
 		position: absolute;

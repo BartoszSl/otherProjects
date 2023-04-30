@@ -219,7 +219,11 @@ body {
 
 // MAIN
 
-// Przewodnik
+// guide
+
+.section-guide {
+	margin-bottom: 100px;
+}
 
 .section {
 	&__content-text,
@@ -280,7 +284,6 @@ body {
 
 .section-about-us {
 	position: relative;
-	margin-top: 100px;
 	.wrapper {
 		display: flex;
 		justify-content: center;
@@ -308,8 +311,8 @@ body {
 	}
 	&__content {
 		width: 320px;
-		height: 280px;
 		text-align: center;
+		font-size: 1.6rem;
 	}
 	&__title {
 		position: relative;
@@ -322,8 +325,8 @@ body {
 		&::after {
 			content: '';
 			position: absolute;
-			width: 30px;
-			height: 30px;
+			width: 25%;
+			height: 90%;
 		}
 		&::before {
 			top: -2px;
@@ -363,11 +366,6 @@ body {
 		top: 60px;
 		right: 5px;
 		width: 135px;
-		ul {
-			li {
-				font-size: 1.4rem;
-			}
-		}
 	}
 	&__logo {
 		position: absolute;
@@ -376,6 +374,153 @@ body {
 		font-size: 1.4rem;
 		font-weight: 700;
 		color: white;
+	}
+
+	&__szymon {
+		&--icon {
+			margin-right: 60px;
+		}
+		&--toDo {
+			margin-top: 30px;
+			padding-left: 30px;
+		}
+		&__hrSection {
+			position: absolute;
+			top: -40px;
+			left: -10vw;
+			height: 130px;
+			width: 2px;
+			background-color: $dark-grey;
+		}
+		&--dark {
+			color: black;
+		}
+	}
+
+	&__km {
+		&--title {
+			position: relative;
+			text-transform: uppercase;
+			margin-left: -100%;
+			margin-top: -100px;
+			font-size: 3.2rem;
+			letter-spacing: 2px;
+			&::before,
+			&::after {
+				content: '';
+				position: absolute;
+				width: 40%;
+				height: 70%;
+			}
+		}
+		&--toDo {
+			top: 120px;
+			right: 0;
+			width: 135px;
+		}
+	}
+}
+
+// Map
+
+.map {
+	margin-top: 50px;
+	margin-bottom: 100px;
+	text-align: center;
+	.wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+	}
+	&-left {
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+	}
+	&__title {
+		color: $dark-grey;
+		font-size: 3.2rem;
+	}
+	&__text {
+		margin: 40px 0;
+		font-size: 1.6rem;
+		width: 250px;
+	}
+	&__map {
+		iframe {
+			width: 370px;
+			height: 250px;
+			border-radius: 20px;
+		}
+	}
+}
+
+// Footer
+
+.footer {
+	position: relative;
+	height: 500px;
+	background-color: black;
+	&__content {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		padding-top: 30px;
+		color: white;
+	}
+	&__group,
+	&__back {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+
+		&-title {
+			font-size: 2.4rem;
+		}
+
+		&-members,
+		&-links {
+			margin-top: 10px;
+			margin-bottom: 40px;
+		}
+		&-member,
+		p {
+			margin-top: 10px;
+			font-size: 1.6rem;
+		}
+		a {
+			text-decoration: none;
+			color: white;
+		}
+	}
+	&__back-links {
+		margin-left: 40px;
+		text-transform: uppercase;
+	}
+
+	&__back-title {
+		text-transform: uppercase;
+	}
+
+	&__back-info {
+		transition: color 0.3s;
+		cursor: pointer;
+	}
+
+	&__back-info:hover {
+		color: $content-color;
+	}
+	&__copyright {
+		position: absolute;
+		color: white;
+		width: 100%;
+		text-align: center;
+		font-size: 1.2rem;
+		bottom: 8px;
 	}
 }
 
@@ -418,6 +563,85 @@ body {
 			height: 265px;
 		}
 	}
+
+	.about-us {
+		&__content {
+			width: 380px;
+			font-size: 1.7rem;
+		}
+		&__title {
+			font-size: 3.6rem;
+		}
+		&__icons {
+			margin: 40px 60% 30px 0;
+			img {
+				width: 50px;
+				height: 50px;
+			}
+		}
+		&__listToDo {
+			top: 80px;
+			right: 50px;
+			font-size: 1.8rem;
+		}
+
+		&__szymon {
+			&--icon {
+				margin-right: 150px;
+			}
+			&--toDo {
+				margin-top: 30px;
+				margin-right: 10%;
+			}
+			&__hrSection {
+				top: -40px;
+				left: -8vw;
+			}
+		}
+		&__km {
+			&--title {
+				margin-left: -100%;
+				margin-top: -100px;
+				font-size: 3.2rem;
+				letter-spacing: 2px;
+			}
+			&--toDo {
+				top: 100px;
+				right: 15%;
+				width: 135px;
+			}
+			&--icons {
+				margin-right: 100px;
+			}
+		}
+	}
+	.map {
+		&__title {
+			font-size: 4rem;
+		}
+		&__text {
+			font-size: 2rem;
+			width: 300px;
+		}
+		&__map {
+			iframe {
+				width: 420px;
+				height: 300px;
+			}
+		}
+	}
+
+	.footer {
+		&__content {
+			padding-top: 30px;
+		}
+		&__group,
+		&__back {
+			&-title {
+				font-size: 3rem;
+			}
+		}
+	}
 }
 
 @media (min-width: 768px) {
@@ -455,6 +679,87 @@ body {
 		&__map {
 			width: 450px;
 			height: 305px;
+		}
+	}
+	.about-us {
+		&__content {
+			width: 460px;
+			font-size: 1.9rem;
+		}
+		&__title {
+			font-size: 4.2rem;
+		}
+		&__icons {
+			margin: 40px 85% 30px 0;
+			img {
+				width: 60px;
+				height: 60px;
+			}
+		}
+		&__listToDo {
+			width: 150px;
+			top: 80px;
+			right: 150px;
+			font-size: 2rem;
+		}
+		&__szymon {
+			&--icon {
+				margin-right: 250px;
+			}
+			&--toDo {
+				margin-top: 30px;
+				margin-right: 0;
+			}
+
+			&__hrSection {
+				top: -65px;
+				left: -10vw;
+				height: 170px;
+				width: 2px;
+			}
+		}
+		&__km {
+			&--title {
+				margin-left: -100%;
+				margin-top: -100px;
+				font-size: 3.2rem;
+				letter-spacing: 2px;
+			}
+			&--toDo {
+				top: 130px;
+				right: 25%;
+			}
+			&--icons {
+				margin-right: 180px;
+			}
+		}
+	}
+	.map {
+		&__title {
+			font-size: 4.6rem;
+		}
+		&__text {
+			font-size: 2.4rem;
+			width: 350px;
+		}
+		&__map {
+			iframe {
+				width: 470px;
+				height: 350px;
+			}
+		}
+	}
+	.footer {
+		&__group,
+		&__back {
+			&-title {
+				font-size: 3.2rem;
+			}
+			&-member,
+			p {
+				margin-top: 10px;
+				font-size: 1.6rem;
+			}
 		}
 	}
 }
@@ -508,6 +813,139 @@ body {
 			height: 400px;
 		}
 	}
+
+	.section-about-us {
+		.wrapper {
+			flex-direction: row;
+			padding: 0 30px;
+		}
+	}
+
+	.about-us {
+		&__main {
+			width: 50%;
+			&--bottom {
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				flex-direction: column;
+				width: 100%;
+				height: 100%;
+			}
+		}
+		&__content {
+			width: 450px;
+			font-size: 2rem;
+		}
+		&__title {
+			margin-left: 0;
+			font-size: 4.6rem;
+			&::before {
+				top: -4px;
+				left: -12px;
+				border-top: 4px solid #fff;
+				border-left: 4px solid #fff;
+			}
+			&::after {
+				bottom: -4px;
+				right: -12px;
+				border-bottom: 4px solid #fff;
+				border-right: 4px solid #fff;
+			}
+		}
+		&__icons {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			margin: 0;
+			img {
+				width: 70px;
+				height: 70px;
+				margin-right: 20px;
+			}
+		}
+		&__listToDo {
+			position: relative;
+			top: 0;
+			right: 0;
+			margin: 50px 0 50px 30px;
+			width: 160px;
+			font-size: 2.2rem;
+		}
+		&__logo {
+			font-size: 1.8rem;
+		}
+
+		&__szymon {
+			&__hrSection {
+				position: absolute;
+				top: -120px;
+				left: 25vw;
+				height: 350px;
+				width: 2px;
+				background-color: $dark-grey;
+			}
+		}
+		&__km {
+			&--title {
+				margin-top: 10px;
+				font-size: 3.2rem;
+				letter-spacing: 2px;
+			}
+		}
+	}
+	.map {
+		padding: 0 20px;
+		.wrapper {
+			flex-direction: row;
+		}
+		&-left {
+			width: 45%;
+		}
+		&__title {
+			font-size: 3.8rem;
+		}
+		&__text {
+			font-size: 2.4rem;
+			width: 400px;
+		}
+		&__map {
+			width: 55%;
+			iframe {
+				width: 450px;
+				height: 300px;
+			}
+		}
+	}
+	.footer {
+		.wrapper {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			height: 100%;
+		}
+		&__content {
+			width: 100%;
+			flex-direction: row;
+			padding-bottom: 50px;
+		}
+		&__group,
+		&__back {
+			width: 50%;
+			&-title {
+				font-size: 3.4rem;
+			}
+			&-member,
+			p {
+				font-size: 1.8rem;
+			}
+		}
+		&__copyright {
+			font-size: 1.6rem;
+			bottom: 12px;
+		}
+	}
 }
 
 @media (min-width: 1200px) {
@@ -524,6 +962,94 @@ body {
 	.section {
 		&__select {
 			font-size: 2rem;
+		}
+	}
+	.about-us {
+		&__content {
+			width: 584px;
+			font-size: 2.4rem;
+		}
+		&__title {
+			font-size: 6.4rem;
+			&::before {
+				top: -5px;
+				left: -21px;
+				border-top: 5px solid #fff;
+				border-left: 5px solid #fff;
+			}
+			&::after {
+				bottom: -5px;
+				right: -21px;
+				border-bottom: 5px solid #fff;
+				border-right: 5px solid #fff;
+			}
+		}
+		&__icons {
+			img {
+				width: 100px;
+				height: 100px;
+				margin-right: 20px;
+			}
+		}
+		&__listToDo {
+			margin: 50px 0 50px -50px;
+			width: 180px;
+			font-size: 2.4rem;
+		}
+		&__logo {
+			font-size: 2.4rem;
+		}
+		&__szymon {
+			&--icon {
+				margin-right: 10px;
+				img {
+					margin-right: 50px;
+				}
+			}
+			&__hrSection {
+				position: absolute;
+				top: -120px;
+				left: 335px;
+				height: 350px;
+				width: 2px;
+				background-color: $dark-grey;
+			}
+		}
+	}
+	.map {
+		padding: 0 20px;
+		.wrapper {
+			flex-direction: row;
+		}
+		&__title {
+			font-size: 4.8rem;
+		}
+		&__text {
+			font-size: 3rem;
+			width: 500px;
+		}
+		&__map {
+			iframe {
+				width: 550px;
+				height: 350px;
+			}
+		}
+	}
+
+	.footer {
+		&__group,
+		&__back {
+			&-title {
+				font-size: 4rem;
+			}
+			&-member,
+			p {
+				font-size: 2rem;
+			}
+		}
+		&__copyright {
+			font-size: 1.8rem;
+			bottom: 12px;
 		}
 	}
 }
