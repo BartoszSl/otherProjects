@@ -32,13 +32,13 @@
 		<nav class="nav">
 			<div class="nav__items">
 				<a href="#islands" class="nav__item">Film</a>
-				<a href="#guide" class="nav__item">guide</a>
+				<a href="#guide" class="nav__item">Przewodnik</a>
 				<a href="#about-us" class="nav__item">O nas</a>
-				<a href="#mapa" class="nav__item">Mapa</a>
+				<a href="#map" class="nav__item">Mapa</a>
 			</div>
 		</nav>
 
-		<header class="header">
+		<header class="header section">
 			<div class="header--shadow"></div>
 			<div class="header__content">
 				<h2 class="header__text">
@@ -52,32 +52,45 @@
 		</header>
 
 		<main class="main">
-			<section id="guide" class="section section-guide">
+			<section id="guide" class="section section-guide white-section">
 				<div class="wrapper">
 					<div class="section__content-text">
-						<select name="" id="" class="section__select">
-							<option value="Kadzielnia">Kadzielnia</option>
+						<select id="select" class="section__select" >
+							<option value="0">Binkowski</option>
+							<option value="1">Stadion</option>
+							<option value="2">Kadzielnia</option>
+							<option value="3">Skwer Harcerski</option>
+							<option value="4">Park</option>
+							<option value="5">Muzeum w kielcach</option>
+							<option value="6">McDonald</option>
+							<option value="7">Zalew Strawczyn</option>
+							<option value="8">Basen Strawczyn</option>
+							<option value="9">Kino Strawczyn</option>
+							<option value="10">ZOO w lisowie</option>
 						</select>
 						<h3 class="section__title">
-							guide: <span class="section__title--bold">Kadzielnia</span>
+							Przewodnik:
+							<span class="section__title--bold change-title">Binkowski</span>
 						</h3>
 						<div class="section__content">
-							<p class="section__text">
-								Rezerwat Przyrody Kadzielnia to miejsce, w którym każdy znajdzie coś dla siebie. Na terenie obiektu znajduje się M.injaskinia, tyrolka, oraz amfiteatr. Rezerwat Przyrody Kadzielnia to miejsce, w którym każdy znajdzie coś dla siebie. Na terenietego obiektu znajduje się M.in jaskinia, tyrolka, oraz amfiteatr. Rezerwat Przyrody Kadzielnia to miejsce, w którymkażdy znajdzie coś dla siebie. Na terenie tego obiektu znajduje się M.in jaskinia, tyrolka, oraz amfiteatr.
+							<p class="section__text change-text">
+								Baseny Tropikalne Binkowski to idealne miejsce do spędzenia wolnego czasu samotnie , bądź z rodziną lub przyjaciółmi. Obiekt składa się z M.in jednego dużego basenu z barem wodnym, basenu dla dzieci, rzeki prowadzącej przez cały obiekt. Budynek jest cały czas wzbogacany o nowe atrakcje, a turyści z innych miejsc mogą zatrzymać się na nocleg w hotelu znajdującym się obok. 
 							</p>
 						</div>
 					</div>
 					<div class="section__content-imgs">
-						<img src="./img/kadzielnia.png" alt="" class="section__img" />
+						<img
+							src="./img/binkowski.jpg"
+							alt=""
+							class="section__img change-img"
+						/>
 						<iframe
-							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2518.3674738637515!2d20.615495927020383!3d50.86139635768952!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x471827f509bc6533%3A0xadd9e13322b35162!2sRezerwat%20Przyrody%20Kadzielnia!5e0!3m2!1spl!2spl!4v1682795255320!5m2!1spl!2spl"
-							width="0"
-							height="0"
+							src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2518.790432805151!2d20.607025177020063!3d50.85356490825654!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4717881962791723%3A0x7b65af67a3127e05!2sBaseny%20Tropikalne%20Binkowski%20Resort!5e0!3m2!1spl!2spl!4v1682954002599!5m2!1spl!2spl"
 							style="border: 0"
 							allowfullscreen=""
 							loading="lazy"
 							referrerpolicy="no-referrer-when-downgrade"
-							class="section__map"
+							class="section__map change-map"
 						></iframe>
 					</div>
 				</div>
@@ -118,7 +131,7 @@
 
 			<section
 				id="about-us"
-				class="section section-about-us section-about-us--white"
+				class="section section-about-us section-about-us--white white-section"
 			>
 				<div class="wrapper">
 					<div class="about-us__main">
@@ -175,14 +188,14 @@
 				</div>
 			</section>
 
-			<section id="mapa" class="map">
+			<section id="map" class="section map white-section">
 				<div class="wrapper">
 					<div class="map-left">
 						<h2 class="map__title">
-							<span class="dark-content-color">Mapa</span> guidea
+							<span class="dark-content-color">Mapa</span> Przewodnika
 						</h2>
 						<p class="map__text">
-							W tej sekcji, znajduje się cała mapa naszego guidea. Możesz
+							W tej sekcji, znajduje się cała mapa naszego przewodnika. Możesz
 							przybliżyć oddalić, pobawić się i zobaczyć każde miejsce na mapie
 							dokładnie
 						</p>
@@ -190,6 +203,7 @@
 					<div class="map__map">
 						<iframe
 							src="https://www.google.com/maps/d/embed?mid=1i4KV8kd4A1eeHt_qbWssaEOc6aNJ-og&ehbc=2E312F"
+							style="border: 0"
 						></iframe>
 					</div>
 				</div>
@@ -226,7 +240,7 @@
 			<p class="footer__copyright">CopyRight &copy; Bartosz Ślusarczyk</p>
 		</footer>
 
-		<script src="js/guide.js"></script>
 		<script src="js/main.js"></script>
+		<script src="js/guide.js"></script>
 	</body>
 </html>
