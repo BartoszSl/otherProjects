@@ -154,6 +154,12 @@ body {
 	animation: navItemsAnimation 1s both;
 }
 
+.black-bars-color,
+.black-bars-color::after,
+.black-bars-color::before {
+	background-color:black;
+}
+
 // HEADER
 
 .header {
@@ -273,6 +279,7 @@ body {
 
 	&__img {
 		margin: 30px 0;
+		border-radius: 25px;
 	}
 
 	&__map {
