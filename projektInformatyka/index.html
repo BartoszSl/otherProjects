@@ -19,8 +19,8 @@
 	</head>
 	<body>
 		<div class="firstLine">
-			<a href="#" class="nav__title"
-				>Projekt<span class="content-color">Informatyka</span></a
+			<a href="#" class="nav__title">
+				Projekt<span class="content-color">Informatyka</span></a
 			>
 			<button class="burger-btn">
 				<div class="burger-btn__box">
@@ -31,7 +31,7 @@
 
 		<nav class="nav">
 			<div class="nav__items">
-				<a href="#islands" class="nav__item">Film</a>
+				<a href="#islands" class="nav__item filmOpen">Film</a>
 				<a href="#guide" class="nav__item">Przewodnik</a>
 				<a href="#about-us" class="nav__item">O nas</a>
 				<a href="#map" class="nav__item">Mapa</a>
@@ -45,17 +45,21 @@
 					Już w dzisiejszym filmie...<br />StarWars
 					<span class="content-color">prezes odrodzenie</span>
 				</h2>
-				<div class="film-text header__btn btn-special-animation">
+				<div class="film-text header__btn btn-special-animation filmOpen">
 					<p>Załącz film</p>
 				</div>
 			</div>
 		</header>
+		<div class="film__card">
+			<i class="fa-solid fa-xmark closeFilm"></i>
+			<video src="./img/film_informatyka.mp4" width="320" height="240" controls>
+		</div>
 
 		<main class="main">
 			<section id="guide" class="section section-guide white-section">
 				<div class="wrapper">
 					<div class="section__content-text">
-						<select id="select" class="section__select" >
+						<select id="select" class="section__select">
 							<option value="0">Binkowski</option>
 							<option value="1">Stadion</option>
 							<option value="2">Kadzielnia</option>
@@ -74,7 +78,12 @@
 						</h3>
 						<div class="section__content">
 							<p class="section__text change-text">
-								Baseny Tropikalne Binkowski to idealne miejsce do spędzenia wolnego czasu samotnie , bądź z rodziną lub przyjaciółmi. Obiekt składa się z M.in jednego dużego basenu z barem wodnym, basenu dla dzieci, rzeki prowadzącej przez cały obiekt. Budynek jest cały czas wzbogacany o nowe atrakcje, a turyści z innych miejsc mogą zatrzymać się na nocleg w hotelu znajdującym się obok. 
+								Baseny Tropikalne Binkowski to idealne miejsce do spędzenia
+								wolnego czasu samotnie , bądź z rodziną lub przyjaciółmi. Obiekt
+								składa się z M.in jednego dużego basenu z barem wodnym, basenu
+								dla dzieci, rzeki prowadzącej przez cały obiekt. Budynek jest
+								cały czas wzbogacany o nowe atrakcje, a turyści z innych miejsc
+								mogą zatrzymać się na nocleg w hotelu znajdującym się obok.
 							</p>
 						</div>
 					</div>
@@ -229,10 +238,10 @@
 						<div class="footer__back-links">
 							<p><a href="#" class="footer__back-info">Home</a></p>
 							<p>
-								<a href="#guide" class="footer__back-info">guide</a>
+								<a href="#guide" class="footer__back-info">Przewodnik</a>
 							</p>
-							<p><a href="" class="footer__back-info">O nas</a></p>
-							<p><a href="" class="footer__back-info">Mapa</a></p>
+							<p><a href="#about-us" class="footer__back-info">O nas</a></p>
+							<p><a href="#map" class="footer__back-info">Mapa</a></p>
 						</div>
 					</div>
 				</div>
