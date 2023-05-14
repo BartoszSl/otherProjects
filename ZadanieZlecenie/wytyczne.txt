@@ -1,0 +1,13 @@
+1. została stworzona i starannie odwzorowana na podstawie makiety (do pobrania na samym dole),
+2. była zrobiona profesjonalnie, tak jak inne strony poważnych firm (klient nie zna się na technicznych rzeczach, więc ufa Ci, że wszystko zrobisz perfekcyjnie),
+3. miała osobną podstronę "Oferta",
+4. miała osobną podstronę "Kontakt",
+5. miała Twój autorski skrypt napisany w JS dla menu hamburgerowego,
+6. jakaś wersja scroll-spy też jest mile widziana.
+
+
+1. po kliknięciu jakiejś pozycji w nawigacji strona "tak fajnie zjechała" na daną sekcję, żeby to nie był taki "niemiły przeskok",
+2. po kliknięciu "Oferta" w nawigacji strona zjechała na sekcję "Oferta" na stronie głównej, a nie przechodziła na podstronę "Oferta",
+3. po zjechaniu na sekcję "Oferta" był odnośnik do podstrony z innymi ofertami (niestety grafik nie dodał tego do makiety, sam/a musisz to "zaprojektować"),
+4. na podstronie "Kontakt" ma być formularz kontaktowy oraz mapa z Google Maps wskazująca na restaurację McDonald's na ul. Jasnogórskiej 2 w Krakowie (to dla niego bardzo ważne),
+5. na jego stronie pojawiły się darmowe ikonki (np. ✔️ w kartach z ofertą, ✉️ w formularzu kontaktowym itd.).

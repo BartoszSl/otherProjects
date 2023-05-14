@@ -1,0 +1,47 @@
+
+Czym jest GULP? // Porgram, dzięki któremu możemy zoptymalizować swoją pracę
+
+
+
+npm init -y // Tworzy plik JSON, z danymi o pracy
+
+npm config set init-author-name "Bartek" // Nadaje nam default author name jako Bartek
+
+npm get init-author-name // Zwraca nam nazwę authora 
+
+npm config delete init-author-name // Usuwa domyślnego author'a
+
+========= Instalowanie Gulpa
+
+npm i gulp // npm install hulp // Instalowanie wtyczki
+
+npm install --save-dev gulp // Tworzy nam i dodaje wtyczkę do devDependencies,
+
+dependencies: Dodaje do siebie kiedy będziemy instlować poprzez skrót i albo całe słówko install,
+Instalujemy te paczki, z któych będziemy korzystać na produkcji, np. JQuery
+
+devDependencies: Tworzymy wtyczki podczas tworzenia, np. gulp, SASS
+
+
+npm i --production // Komenda pozwala nam na pobranie wtyczek tylko tych, które znajdują się w "dependencies"
+
+
+!!   npm istanll -D == npm install --save-dev  !!
+
+npm i // Kiedy usuniemy node_modules, ale gulp mamy wpisanego do package.json, możemy użyć tej komendy,
+a NPM zrozumie i doda nam ten plik spowrotem 
+
+
+npm update wtyczka // Aktualizowanie wtyczek
+npm update // Aktualizuje wszystkie zainstalowane wtyczki w devDependencies
+
+npm uninstall wtyczka // Usuwanie wtyczek
+
+npm install --global gulp-cli // Komenda na zainstalowanie wszystkiego z package.json kiedy przeniesiemy się na inny komputer
+
+========= wtyczki
+
+
+
+npm i uuid // Wtyczka, która odpowiada za tworzenie losowych unikalnych ID
+npm i gulp
