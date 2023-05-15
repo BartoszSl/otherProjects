@@ -1,16 +1,258 @@
-$white: #fff;
+@use './colors' as *;
+
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	font-size: 62.5%;
+	scroll-behavior: smooth;
+}
 
 body {
-	font-family: sans-serif;
+	background-color: #333;
+	font-family: 'Montserrat', sans-serif;
+	font-size: 1.6rem;
+}
+
+.wrapper {
+	margin: 0 auto;
+	max-width: 1200px;
+	width: 100%;
+}
+
+ul {
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+.shadow {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.7);
+	z-index: -10;
+}
+
+// Mobile
+
+// Navigation
+
+.nav {
+	position: relative;
+	padding: 0.5rem 3rem;
 	background-color: $white;
-	// To jest komentarz
-	padding: 5px;
-	margin: 3px;
-	p {
-		padding: 4px;
-        font-size: 40px;
-        text-align: center;
-        color: red;
-        font-weight: bold;
+	color: $black;
+
+	&-wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+
+	&-desktop {
+		display: none;
+	}
+
+	&__title {
+		font-size: 2.4rem;
+	}
+
+	&__dropdown {
+		display: none;
+	}
+
+	&__link {
+		font-size: 2rem;
+		color: black;
+	}
+
+	&-mobile--active &__dropdown {
+		position: absolute;
+		display: block;
+		text-align: center;
+		left: 0;
+		top: 7rem;
+		width: 100%;
+		background-color: #fff;
+		padding-bottom: 0.5em;
+		line-height: 40px;
+		animation: dropdown 0.5s forwards;
+		transform-origin: top;
+		z-index: 10;
+	}
+}
+
+@keyframes dropdown {
+	from {
+		opacity: 0;
+		transform: scale(0.4) translateY(-40px);
+	}
+	to {
+		opacity: 1;
+		transform: scale(1) translateY(0);
+	}
+}
+
+// Header
+
+.header {
+	position: relative;
+	background-image: url('../img/jungleSmall.jpg');
+	height: 60vh;
+	background-position: center;
+	background-size: cover;
+	z-index: 0;
+
+	&__content {
+		display: flex;
+		align-items: start;
+		justify-content: center;
+		flex-direction: column;
+		height: 100%;
+		margin-left: 4rem;
+	}
+
+	&__text,
+	&__title {
+		color: $white;
+	}
+
+	&__text {
+		font-size: 1.6rem;
+		font-weight: 400;
+	}
+
+	&__title {
+		font-size: 2.4rem;
+		font-weight: 700;
+	}
+}
+
+@media (min-width: 576px) {
+	.nav {
+		&__title {
+			font-size: 3rem;
+		}
+	}
+	.header {
+		&__content {
+			margin-left: 6rem;
+		}
+
+		&__text {
+			font-size: 2rem;
+		}
+
+		&__title {
+			font-size: 2.8rem;
+		}
+	}
+}
+
+// Desktop
+
+@media (min-width: 768px) {
+	.nav {
+		padding: 0 5rem;
+		&-mobile {
+			display: none;
+		}
+		&-desktop {
+			display: flex;
+		}
+
+		&__title {
+			font-size: 3.2rem;
+		}
+
+		&__links {
+			display: flex;
+		}
+
+		&__link {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 1.8rem;
+			padding: 2.5rem 0;
+			width: 9rem;
+			height: 200%;
+			transition: color 0.3s, background-color 0.3s;
+		}
+		&__link:hover {
+			color: $white;
+			background-color: $black;
+		}
+	}
+	.header {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		background-image: url('../img/jungleBig.jpg');
+		&__content {
+			margin-right: 20rem;
+			max-width: 1200px;
+		}
+
+		&__text {
+			font-size: 2.2rem;
+		}
+
+		&__title {
+			font-size: 3rem;
+		}
+	}
+}
+
+@media (min-width: 992px) {
+	.nav {
+		&__title {
+			font-size: 4rem;
+		}
+
+		&__link {
+			font-size: 2rem;
+			width: 10rem;
+		}
+	}
+	.header {
+		&__content {
+			margin-left: 10rem;
+		}
+
+		&__text {
+			font-size: 2.6rem;
+		}
+
+		&__title {
+			font-size: 3.8rem;
+		}
+	}
+}
+
+@media (min-width: 1200px) {
+	.nav {
+		&__title {
+			font-size: 4.8rem;
+			margin-left: 8rem;
+		}
+
+		&__link {
+			font-size: 2.2rem;
+			width: 13rem;
+		}
+	}
+	.header {
+		&__content {
+			margin-right: 35rem;
+		}
 	}
 }
