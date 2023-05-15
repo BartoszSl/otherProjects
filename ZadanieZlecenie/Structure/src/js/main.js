@@ -1,9 +1,17 @@
-const test = (params) => {
-	console.log('test');
-    console.log('Drugi test');
+const navMobile = document.querySelector('.nav-mobile');
+const navBtn = document.querySelector('.hamburger');
+const allNavItems = document.querySelectorAll('.nav__link');
 
-
-    console.log(test2);
+const handleNav = () => {
+	navBtn.classList.toggle('is-active');
+	navMobile.classList.toggle('nav-mobile--active');
+    
+	allNavItems.forEach((item) => {
+        item.addEventListener('click', () => {
+            navBtn.classList.remove('is-active');
+			navMobile.classList.remove('nav-mobile--active');
+		});
+	});
 };
 
-test()
+navBtn.addEventListener('click', handleNav);
